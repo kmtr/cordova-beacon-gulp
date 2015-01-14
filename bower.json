@@ -1,0 +1,21 @@
+{
+  "name": "cordova-beacon",
+  "version": "0.0.0",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "build"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.3",
+    "underscore": "~1.7.0"
+  }
+}

@@ -16,13 +16,11 @@ iBeaconDelegate = ->
     .plugins
     .locationManager
     .Delegate()
-    .implement {
-      didDetermineStateForRegion: throwEvent
-      didStartMonitoringForRegion: throwEvent
-      didExitRegion: throwEvent
-      didEnterRegion: throwEvent
-      didRangeBeaconsInRegion: throwEvent
-    }
+  delegate.didDetermineStateForRegion = throwEvent
+  delegate.didStartMonitoringForRegion = throwEvent
+  delegate.didExitRegion = throwEvent
+  delegate.didEnterRegion = throwEvent
+  delegate.didRangeBeaconsInRegion = throwEvent
   cordova.plugins.locationManager.setDelegate delegate
   cordova.plugins.locationManager.requestAlwaysAuthorization()
 

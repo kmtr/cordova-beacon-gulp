@@ -114,11 +114,11 @@ cordovaTaskOpts = minimist process.argv.slice(2),
 gulp.task 'cordova-build', ['build'], ->
   gulp
     .src ''
-    .pipe shell './node_modules/cordova/bin/cordova build ' +
+    .pipe shell './node_modules/.bin/cordova build ' +
       cordovaTaskOpts.platform
 
 gulp.task 'cordova-run', ['cordova-build'], ->
   gulp
     .src ''
-    .pipe shell './node_modules/cordova/bin/cordova run ' +
+    .pipe shell './node_modules/.bin/cordova run ' +
       cordovaTaskOpts.platform
